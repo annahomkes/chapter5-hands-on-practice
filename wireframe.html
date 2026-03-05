@@ -22,7 +22,6 @@
     box-sizing: border-box;
   }
 
-  /* HEADER area */
   .header-box{
     border: 2px solid #1e1e1e;
     padding: 10px 12px 0 12px;
@@ -42,7 +41,6 @@
     height: 48px;
   }
 
-  /* Top NAV row */
   .nav{
     display:grid;
     grid-template-columns: repeat(5, 1fr);
@@ -56,20 +54,19 @@
   }
   .nav div:last-child{ border-right:none; }
 
-  /* HERO image section like Fig 5.35 */
+  /* HERO image */
   .hero{
     border-top: 2px solid #1e1e1e;
     padding: 10px 0 0 0;
   }
   .hero img{
     width: 100%;
-    height: 190px;
+    height: 210px;
     object-fit: cover;
     border: 2px solid #1e1e1e;
     display:block;
   }
 
-  /* Content area */
   .content-box{
     border: 2px solid #1e1e1e;
     border-top: none;
@@ -77,7 +74,6 @@
     box-sizing: border-box;
   }
 
-  /* 3-column layout like Fig 5.35 */
   .columns{
     display: grid;
     grid-template-columns: 1.2fr 1.6fr 1fr;
@@ -110,8 +106,8 @@
   }
 
   .thumb{
-    width: 46px;
-    height: 46px;
+    width: 58px;
+    height: 58px;
     object-fit: cover;
     border: 2px solid #1e1e1e;
     vertical-align: middle;
@@ -120,14 +116,13 @@
 
   .main-image{
     width: 100%;
-    height: 140px;
+    height: 160px;
     object-fit: cover;
     border: 2px solid #1e1e1e;
     display:block;
     margin-bottom: 8px;
   }
 
-  /* FOOTER */
   .footer{
     border: 2px solid #1e1e1e;
     margin-top: 12px;
@@ -147,14 +142,11 @@
 <body>
 <div class="page">
 
-  <!-- HEADER -->
   <div class="header-box">
     <div class="header-title">Header</div>
 
-    <!-- Spotify logo -->
     <img src="spotify-logo.png" alt="Spotify logo" class="logo">
 
-    <!-- Top navigation -->
     <div class="nav">
       <div>Home</div>
       <div>Search</div>
@@ -163,27 +155,30 @@
       <div>Support</div>
     </div>
 
-    <!-- HERO image like Figure 5.35 -->
+    <!-- CHANGE #1: playlist.jpg is now the HERO banner -->
     <div class="hero">
-      <img src="hero.jpg" alt="Hero image (Spotify homepage/banner)">
+      <img src="playlist.jpg" alt="Hero image (Spotify homepage/banner)">
     </div>
 
-    <!-- CONTENT -->
     <div class="content-box">
-
       <div class="columns">
 
         <!-- LEFT COLUMN -->
         <div class="col">
-          <h2>Heading</h2>
+          <!-- CHANGE #5: Heading becomes “All About Spotify” -->
+          <h2>All About Spotify</h2>
+
           <p>
             Spotify helps users discover and stream music, podcasts, and audiobooks with personalized recommendations.
           </p>
 
           <h3>Quick Picks</h3>
+
+          <!-- CHANGE #3: Replace “album cover” with morganwallen.jpg + your sentence -->
           <p>
-            <img src="album1.jpg" class="thumb" alt="Album cover">
-            Daily Mix / Discover Weekly
+            <img src="morganwallen.jpg" class="thumb" alt="Morgan Wallen album cover">
+            Spotify provides easy access to trending songs and albums. Here is a current trendy album called
+            <em>"I'm the Problem"</em> by Morgan Wallen.
           </p>
 
           <ul>
@@ -195,36 +190,33 @@
 
         <!-- MIDDLE COLUMN -->
         <div class="col">
-          <img src="playlist.jpg" class="main-image" alt="Featured playlist image">
+          <!-- CHANGE #2: josiah.jpg goes where playlist.jpg used to be -->
+          <img src="josiah.jpg" class="main-image" alt="Josiah Queen - Mt. Zion album">
 
-          <h3>Subheading (Featured)</h3>
+          <h3>Amazing Albums</h3>
           <p>
-            Featured playlist / album area. This section highlights a main recommendation or promoted content.
-          </p>
-
-          <p style="margin-top:10px;">
-            <strong>Callout:</strong> “Continue Listening” row and “Jump Back In” tiles appear here.
+            Amazing albums can be easily located on the website, such as this Christian Pop Artist Josiah Queen.
+            Here is his current most famous album, <em>Mt. Zion</em>.
           </p>
         </div>
 
         <!-- RIGHT COLUMN -->
         <div class="col">
-          <h3>Subheading</h3>
+          <!-- CHANGE #4: Rename the subheadings -->
+          <h3>Trending Music</h3>
           <p>Trending now, charts, and viral tracks.</p>
 
-          <h3>Subheading</h3>
-          <p>Podcasts and new episodes recommended for you.</p>
+          <h3>Recommendations</h3>
+          <p>Playlists and suggestions based on listening history and preferences.</p>
 
-          <h3>Subheading</h3>
-          <p>Premium upsell: ad-free listening, downloads, higher audio quality.</p>
+          <h3>Premium Benefits</h3>
+          <p>Ad-free listening, downloads, and higher audio quality.</p>
         </div>
 
       </div>
-
     </div>
   </div>
 
-  <!-- FOOTER -->
   <div class="footer">
     Footer
     <div class="footer-links">
