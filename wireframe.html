@@ -28,6 +28,7 @@
     box-sizing: border-box;
   }
 
+  /* CHANGE: Header text now says Spotify */
   .header-title{
     text-align:center;
     font-size: 44px;
@@ -110,8 +111,6 @@
     height: 58px;
     object-fit: cover;
     border: 2px solid #1e1e1e;
-    vertical-align: middle;
-    margin-right: 8px;
   }
 
   .main-image{
@@ -143,7 +142,8 @@
 <div class="page">
 
   <div class="header-box">
-    <div class="header-title">Header</div>
+    <!-- CHANGE #1: Title now says Spotify -->
+    <div class="header-title">Spotify</div>
 
     <img src="spotify-logo.png" alt="Spotify logo" class="logo">
 
@@ -155,7 +155,6 @@
       <div>Support</div>
     </div>
 
-    <!-- CHANGE #1: playlist.jpg is now the HERO banner -->
     <div class="hero">
       <img src="playlist.jpg" alt="Hero image (Spotify homepage/banner)">
     </div>
@@ -165,7 +164,6 @@
 
         <!-- LEFT COLUMN -->
         <div class="col">
-          <!-- CHANGE #5: Heading becomes “All About Spotify” -->
           <h2>All About Spotify</h2>
 
           <p>
@@ -174,12 +172,14 @@
 
           <h3>Quick Picks</h3>
 
-          <!-- CHANGE #3: Replace “album cover” with morganwallen.jpg + your sentence -->
-          <p>
+          <!-- CHANGE #2: Use flex layout to remove the weird spacing -->
+          <div style="display:flex; gap:10px; align-items:flex-start; margin-bottom:10px;">
             <img src="morganwallen.jpg" class="thumb" alt="Morgan Wallen album cover">
-            Spotify provides easy access to trending songs and albums. Here is a current trendy album called
-            <em>"I'm the Problem"</em> by Morgan Wallen.
-          </p>
+            <p style="margin:0;">
+              Spotify provides easy access to trending songs and albums. Here is a current trendy album called
+              <em>"I'm the Problem"</em> by Morgan Wallen.
+            </p>
+          </div>
 
           <ul>
             <li>Made For You playlists</li>
@@ -190,7 +190,6 @@
 
         <!-- MIDDLE COLUMN -->
         <div class="col">
-          <!-- CHANGE #2: josiah.jpg goes where playlist.jpg used to be -->
           <img src="josiah.jpg" class="main-image" alt="Josiah Queen - Mt. Zion album">
 
           <h3>Amazing Albums</h3>
@@ -202,7 +201,6 @@
 
         <!-- RIGHT COLUMN -->
         <div class="col">
-          <!-- CHANGE #4: Rename the subheadings -->
           <h3>Trending Music</h3>
           <p>Trending now, charts, and viral tracks.</p>
 
